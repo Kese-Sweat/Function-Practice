@@ -18,7 +18,18 @@ var instructors = [
 // ---------------------------
 // 1. Find largest number
 // ---------------------------
+function getLargest(arr){
+var largestNumber = 0   
+for (var i=0; i<arr.length; i++){
+    var currentNumber=arr[1]
+    if (currentNumber > largestNumber){
+        largestNumber=currentNumber
+}
+}
+return largestNumber
+}
 
+var numbers = [1,12,4,18,9,7,11,3,101,5,6]
 
 // ---------------------------
 // 2. Find longest string
@@ -29,11 +40,17 @@ var instructors = [
 // 3. Find even numbers
 // ---------------------------
 
+function getLargest(arr)
+var numbers = [1,12,4,18,9,7,11,3,101,5,6];
+for (var i=0; i<arr.length; numbers++)
 
 
 // ---------------------------
 // 4. Find odd numbers
 // ---------------------------
+function getLargest(arr)
+var numbers = [1,12,4,18,9,7,11,3,101,5,6];
+for (var i=0; i<arr.length; numbers++)
 
 
 // ---------------------------
