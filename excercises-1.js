@@ -94,7 +94,7 @@ console.assert(greaterThan(-234, 1) === false)
 // is the parameter that was passed in.
 
 function greet(name){
-    return ("Hello," + name + "!")
+    return ('Hello, ' + name + '!')
 }
 
 console.assert(greet("Michael") === "Hello, Michael!")
@@ -114,7 +114,7 @@ console.assert(greet("Iron Man") === "Hello, Iron Man!")
 
 function madlib(name1, name2, name3, name4)
 {
-    return ("The " +name1 + "brown"+name2+""+name3+"over the"+name4+".")
+    return `the ${name1} brown ${name2} ${name3} over the ${name4}.`
 }
 
 

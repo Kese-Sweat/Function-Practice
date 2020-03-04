@@ -67,9 +67,27 @@ console.assert(isVowel("2") === false)
 // For example, translate("this is fun") should return 
 // the string "tothohisos isos fofunon".
 // ---------------------
-function rovarsprokcet(randoms)
-var text="rovarsprokcet"
+function rovarsprokcet(t){
+var str = ''
+var text = t.toString()
 
+for (var i=0; 1 < text.length; i++){
+    var currentLetter = text.charAt(i)
+    var letterIsAVowel = isVowel(currentLetter)
+    var letterIsAConsonant = 'bcdfghklmnpqrstvwxz'.includes(currentLetter)
+
+    if (letterIsAVowel){
+        str += currentLetter
+    }
+    else if (letterIsAConsonant){
+        str += currentLetter + 'o' + currentLetter
+    }else{
+        str += currentLetter
+    }   
+
+    }
+    return str
+}
 
 console.assert(rovarspraket("a") === "a")
 console.assert(rovarspraket("b") === "bob")
